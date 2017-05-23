@@ -61,7 +61,7 @@ h2, h3, h4, h5, h6{
 	display: none;
 }
 
-    /* 520px以上（PC） */
+    /* 400px以上（PC） */
 	#navi {
 		font-weight: normal;
 	    font-family: Roboto Slab;
@@ -113,8 +113,8 @@ h2, h3, h4, h5, h6{
 	    border-right: 1px solid #DDD;
 	}
 
-    /* 520px未満（スマホ） */
-@media only screen and (max-width: 520px) {
+    /* 400px未満（スマホ） */
+@media only screen and (max-width: 400px) {
 	#navi-menu{
 		display: none;
 	}
