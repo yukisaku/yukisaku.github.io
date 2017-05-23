@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* body */
+body {
+	/* font */
+	font-family: "メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS P Gothic","Roboto","Roboto Slab",serif,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 100%;
+	line-height: 1.4;
+	
+	color: #333; /* 文字色 */
+	background: lightblue; /* 背景色 */
+
+	margin: 0; /* 外側余白 */
+	padding: 0; /* 内側余白 */
+}
+
+/* container */
+#container {
+	margin: 0 auto;
+	max-width: 960px;
+	
+	background: #FFF; /* 背景色 */
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+
+/* header */
+header {
+	padding-top: 20px; /* 上部余白 */
+	padding-bottom: 20px; /* 下部余白 */
+}
+
+#headerLogo {
+	margin-left: 20px;
+}
+
+/* h1 */
+h1{
+	margin-top: 0;
+	font-size: 2.5em;
+	font-weight: normal;
+	font-family: Roboto Slab;
+}
+
+/* h2～h6 */
+h2, h3, h4, h5, h6{
+	color: #fff;
+	margin-top: 0;	 /* 上マージンを削除、divからのマージンはみ出し回避 */
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/*----------------------------------------------
+    navigation design
+----------------------------------------------*/
+
+/* toggle */
+#toggle{
+	display: none;
+}
+
+    /* 520px以上（PC） */
+	#navi {
+		font-weight: normal;
+	    font-family: Roboto Slab;
+		
+		overflow: hidden;
+		background: #EEE; /* 背景色 */
+		border-top: 1px solid #DDD;
+	}
+	
+    #navi-menu {
+        width: 100%;
+		margin: 0 auto; 
+        padding: 0;
+    }
+    
+    #navi-menu li {
+        display: block;
+		float: left;
+        width: 120px;
+        margin: 0;
+        padding: 0;
+		line-height: 20px;
+    }
+    
+    #navi-menu li a {
+        display: block;
+		padding: 12px 0 10px;
+        background: #EEE;
+        color: #333;
+		text-align: center;
+        text-decoration: none;
+        font-size: 0.8em;
+		font-weight: normal;
+    }
+
+    #navi-menu li a:hover {
+        background: #DDD;
+    }
+    
+	#navi-menu li:first-child {
+        border-left: 1px solid #DDD;
+    }
+	
+    #navi-menu li+ li {
+        border-left: 1px solid #DDD;
+    }
+	
+	#navi-menu li:last-child {
+	    border-right: 1px solid #DDD;
+	}
+
+    /* 520px未満（スマホ） */
+@media only screen and (max-width: 520px) {
+	#navi-menu{
+		display: none;
+	}
+	
+	#navi-menu li{
+		width: 100%;
+	}
+	
+	#toggle{
+		display: block;
+		position: relative;
+		width: 100%;
+		background: lightblue;
+	}
+	
+	#toggle a{
+		display: block;
+		position: relative;
+		padding: 12px 0 10px;
+		border-bottom: 1px solid lightblue;
+		color: #fff;
+		margin-top: 0;
+		font-size: 0.8em;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	#toggle:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		width: 20px;
+		height: 20px;
+		margin-top: -10px;
+		background: #fff;
+	}
+	
+	#toggle a:before, #toggle a:after{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		width: 20px;
+		height: 4px;
+		background: lightblue;
+	}
+	
+	#toggle a:before{
+		margin-top: -6px;
+	}
+	
+	#toggle a:after{
+		margin-top: 2px;
+	}
+}
+
+#contents {
+	margin: 0 auto;
+	max-width: 768px;
+	padding: 20px 20px 20px 25px;
+    background: #EEE;
+	color: #333;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    text-decoration: none;
+	
+	filter:alpha(opacity=95);
+    -moz-opacity: 0.95;
+    opacity: 0.95;
+	
+	border-radius:10px 10px 10px 10px;
+	border-color:#fff;
+	border-style:solid;
+}
+
+/* テーブル要素の色指定 */
+td, th {
+	color: #fff;
+}
+
+/* エレメント・タグセレクター */
+/* ブラウザー間の相違対策、リストの余白とマージンをゼロにする */
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+
+
+
+p {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+a img {
+	border: none;
+}
+
+#clearfloat {
+	clear:both;
+}
+
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
