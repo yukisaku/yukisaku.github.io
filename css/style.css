@@ -5,12 +5,12 @@ body {
 	/* font */
 	font-family: "メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS P Gothic","Roboto","Roboto Slab",serif,sans-serif;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 100%;
-	line-height: 1.4;
+	font-weight: normal;
+	font-size: 1.0em;
+	line-height: 1.5;
 	
 	color: #333; /* 文字色 */
-	background: lightblue; /* 背景色 */
+	background: #EEE; /* 背景色 */
 
 	margin: 0; /* 外側余白 */
 	padding: 0; /* 内側余白 */
@@ -44,13 +44,69 @@ h1{
 	font-family: Roboto Slab;
 }
 
-/* h2～h6 */
+.logocolor{
+	color: #55AAFF;
+}
+
+/* h2～h6共通要素 */
 h2, h3, h4, h5, h6{
-	color: #fff;
-	margin-top: 0;	 /* 上マージンを削除、divからのマージンはみ出し回避 */
+    margin-top: 0;
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
+/* p */
+p {
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+/* a */
+a img {
+	border: none;
+}
+
+
+/*----------------------------------------------
+    main contents
+----------------------------------------------*/
+
+.signature{
+    font-size: 1.1em;
+    float: right;
+}
+
+h3.leftborder{
+	padding-left: 10px;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-left: 5px solid #55AAFF;
+	color: #55AAFF;
+}
+
+h4.faq{
+	padding-left: 0px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#contents {
+	margin: 0 auto;
+	max-width: 768px;
+	padding: 20px 20px 20px 25px;
+    background: #EEEEEE;
+	color: #333;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    text-decoration: none;
+	
+	border-radius:10px 10px 10px 10px;
+	border-color:#fff;
+	border-style:solid;
+}
+
 
 /*----------------------------------------------
     navigation design
@@ -61,14 +117,14 @@ h2, h3, h4, h5, h6{
 	display: none;
 }
 
-    /* 480px以上（PC） */
+/* 480px以上（PC） */
 	#navi {
 		font-weight: normal;
 	    font-family: Roboto Slab;
 		
 		overflow: hidden;
-		background: #EEE; /* 背景色 */
-		border-top: 1px solid #DDD;
+		background: #BBDDFF; /* 背景色 */
+		border-top: 1px solid #DDEEFF;
 	}
 	
     #navi-menu {
@@ -89,7 +145,7 @@ h2, h3, h4, h5, h6{
     #navi-menu li a {
         display: block;
 		padding: 12px 0 10px;
-        background: #EEE;
+        background: #BBDDFF;
         color: #333;
 		text-align: center;
         text-decoration: none;
@@ -98,22 +154,22 @@ h2, h3, h4, h5, h6{
     }
 
     #navi-menu li a:hover {
-        background: #DDD;
+        background: #55AAFF;
     }
     
 	#navi-menu li:first-child {
-        border-left: 1px solid #DDD;
+        border-left: 1px solid #DDEEFF;
     }
 	
     #navi-menu li+ li {
-        border-left: 1px solid #DDD;
+        border-left: 1px solid #DDEEFF;
     }
 	
 	#navi-menu li:last-child {
-	    border-right: 1px solid #DDD;
+	    border-right: 1px solid #DDEEFF;
 	}
 
-    /* 480px未満（スマホ） */
+/* 480px未満（スマホ） */
 @media only screen and (max-width: 480px) {
 	#navi-menu{
 		display: none;
@@ -127,14 +183,14 @@ h2, h3, h4, h5, h6{
 		display: block;
 		position: relative;
 		width: 100%;
-		background: lightblue;
+		background: #55AAFF;
 	}
 	
 	#toggle a{
 		display: block;
 		position: relative;
 		padding: 12px 0 10px;
-		border-bottom: 1px solid lightblue;
+		border-bottom: 1px solid #BBDDFF;
 		color: #fff;
 		margin-top: 0;
 		font-size: 0.8em;
@@ -162,7 +218,7 @@ h2, h3, h4, h5, h6{
 		left: 10px;
 		width: 20px;
 		height: 4px;
-		background: lightblue;
+		background: #55AAFF;
 	}
 	
 	#toggle a:before{
@@ -174,55 +230,3 @@ h2, h3, h4, h5, h6{
 	}
 }
 
-#contents {
-	margin: 0 auto;
-	max-width: 768px;
-	padding: 20px 20px 20px 25px;
-    background: #EEE;
-	color: #333;
-    font-size: 0.8em;
-    line-height: 1.8em;
-    text-decoration: none;
-	
-	filter:alpha(opacity=95);
-    -moz-opacity: 0.95;
-    opacity: 0.95;
-	
-	border-radius:10px 10px 10px 10px;
-	border-color:#fff;
-	border-style:solid;
-}
-
-/* テーブル要素の色指定 */
-td, th {
-	color: #fff;
-}
-
-/* エレメント・タグセレクター */
-/* ブラウザー間の相違対策、リストの余白とマージンをゼロにする */
-ul, ol, dl { 
-	padding: 0;
-	margin: 0;
-}
-
-
-
-p {
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-a img {
-	border: none;
-}
-
-#clearfloat {
-	clear:both;
-}
-
-.clearfloat {
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
