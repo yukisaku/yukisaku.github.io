@@ -19,7 +19,7 @@ body {
 /* container */
 #container {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 768px;
 	
 	background: #FFF; /* 背景色 */
 	border-left: 1px solid #DDD;
@@ -39,9 +39,9 @@ header {
 /* footer */
 footer {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 768px;
 	
-	background: #EEE; /* 背景色 */
+	background: #DDD; /* 背景色 */
 	padding-top: 30px; /* 上部余白 */
 	padding-right: 30px;
 	padding-bottom: 60px; /* 下部余白 */
@@ -113,7 +113,7 @@ h4.faq{
 
 #contents {
 	margin: 0px auto 20px auto;
-	max-width: 768px;
+	max-width: 660px;
 	padding: 20px 20px 20px 25px;
 	
     background: #EEE;
